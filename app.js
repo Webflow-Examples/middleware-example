@@ -31,7 +31,7 @@ app.get("/books", async (req, res) => {
     };
 
     const response = await axios.get(
-      "https://api.airtable.com/v0/appiV3xCQ0KsaZS0g/books",
+      "https://api.airtable.com/v0/{baseid}/{tablename}",
       { headers }
     );
 
