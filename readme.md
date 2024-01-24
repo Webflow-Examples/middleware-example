@@ -68,7 +68,7 @@ app.get("/books", async (req, res) => {
 
     // Make an HTTP GET request to the specified URL using Axios with the set headers
     const response = await axios.get(
-      "https://api.airtable.com/v0/appiV3xCQ0KsaZS0g/books",
+      "https://api.airtable.com/v0/{baseid}/{tablename}",
       { headers }
     );
 
